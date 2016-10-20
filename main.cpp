@@ -57,7 +57,7 @@ class ultimate_swapper
 {
 public:
     template <typename T>
-    static const bool swap(T& lhs, T& rhs)
+    static void swap(T& lhs, T& rhs)
     {
         try_static(lhs, rhs, test_static(&lhs));
     }
